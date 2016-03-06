@@ -1,0 +1,9 @@
+version: '2'
+services:
+  deluge:
+    image: sashgorokhov/deluge
+    ports:
+      - "8112:8112"
+      - "127.0.0.1:58846:58846"
+    volumes:
+      - "/mnt/media:/media"
